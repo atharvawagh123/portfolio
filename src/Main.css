@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+}
+
+.left-content {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+    align-items: flex-start; /* Align text to the left */
+}
+
+.right-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text content styling */
+.main-heading {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px; /* Space between heading and subheading */
+}
+
+.sub-heading {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #333333;
+}
+
+.location {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Center social icons container */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center icons */
+    width: 100%; /* Full width for centering */
+    margin-top: 20px;
+}
+
+/* Style for social icons */
+.icon-facebook {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.icon-facebook:hover {
+    background-color: #333333;
+    transform: translateY(-5px);
+}
+
+/* Circular image styling */
+.image-1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Align everything to the center */
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .location {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .icon-facebook {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .image-1 {
+        width: 220px;
+        height: 220px;
+        margin-top: 20px;
+    }
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px; /* Padding for button */
+    background-color: #000000; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    font-size: 1.2rem; /* Font size for the icon */
+}
+
+.email-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}

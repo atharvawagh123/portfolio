@@ -1,0 +1,83 @@
+.skills-container {
+    max-width: 1200px; /* Container width */
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* Center the title */
+}
+
+.skills-title {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 30px; /* Increased bottom margin */
+    color: #000; /* Title color */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px; /* Space between items */
+    padding: 0 10px; /* Padding for better spacing */
+}
+
+/* Skill item styles */
+.skill-item {
+    background-color: #fff; /* Card background */
+    border: 2px solid #000; /* Card border */
+    border-radius: 8px;
+    padding: 20px; /* Increased padding for balance */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    transition: transform 0.2s; /* Transition for hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.skill-icon {
+    font-size: 3rem; /* Increased icon size for visibility */
+    margin-bottom: 10px;
+    color: #000; /* Icon color */
+}
+
+.skill-label {
+    font-size: 1.1rem; /* Increased label size for better readability */
+    color: #333; /* Label color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* One column on small screens */
+        padding: 0; /* Remove padding for small screens */
+    }
+    
+    .skills-title {
+        font-size: 1.5rem; /* Adjust title size for small screens */
+    }
+
+    .skill-item {
+        padding: 15px; /* Adjust padding for skill items on small screens */
+    }
+
+    .skill-icon {
+        font-size: 2.5rem; /* Adjust icon size for small screens */
+    }
+
+    .skill-label {
+        font-size: 1rem; /* Adjust label size for small screens */
+    }
+}

@@ -1,0 +1,37 @@
+.scroll-container {
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep the text contained */
+    height: 80px; /* Increased height for better spacing */
+    background-color: #ffffff; /* White background */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    padding: 0 20px; /* Padding for aesthetic spacing */
+    border: 1px solid #e0e0e0; /* Light gray border for definition */
+}
+
+.scroll-text {
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 2rem; /* Larger font size for visibility */
+    color: #000000; /* Black text color */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for a more impactful look */
+    letter-spacing: 1px; /* Space out letters for better readability */
+    animation: scroll-left 15s linear infinite; /* Slowed down scrolling animation */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .scroll-text {
+        font-size: 1.5rem; /* Slightly smaller text on smaller screens */
+    }
+}
