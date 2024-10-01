@@ -3,27 +3,33 @@ import './ProjectCard.css';
 
 const projects = [
     {
-        title: "Project 1",
-        description: "Description of project 1.",
-        source: "https://github.com/yourusername/project1",
-        live: "https://yourwebsite.com/project1",
+        title: "mern-stack-ecommerce",
+        description: "E-commerece website",
+        source: "https://github.com/atharvawagh123/mern-stack-ecommerce",
+        
     },
     {
-        title: "Project 2",
-        description: "Description of project 2.",
-        source: "https://github.com/yourusername/project2",
+        title: "MERN-Booking-App-main",
+        description: "MERN-Booking-App-main web application ",
+        source: "https://github.com/atharvawagh123/MERN-Booking-App-main",
         live: "https://yourwebsite.com/project2",
     },
     {
-        title: "Project 2",
-        description: "Description of project 2.",
-        source: "https://github.com/yourusername/project2",
+        title: "MERN-gmailclone-App-main",
+        description: "mernstack-gmailclone-main web application ",
+        source: "https://github.com/atharvawagh123/mernstack-gmailclone-main",
         live: "https://yourwebsite.com/project2",
     },
     {
-        title: "Project 2",
-        description: "Description of project 2.",
-        source: "https://github.com/yourusername/project2",
+        title: "bookmySeat",
+        description: "bookmyseat web application",
+        source: "https://github.com/atharvawagh123/bookmy",
+        live: "https://yourwebsite.com/project2",
+    },
+    {
+        title: "ChatBot web application",
+        description: "char-bot web application ",
+        source: "https://github.com/atharvawagh123/chat-bot",
         live: "https://yourwebsite.com/project2",
     },
 ];
@@ -39,7 +45,7 @@ const ProjectCard = () => {
                         <p>{project.description}</p>
                         <div className="button-container">
                             <a href={project.source} target="_blank" rel="noopener noreferrer">View Source</a>
-                            <a href={project.live} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            
                         </div>
                     </div>
                 ))}
